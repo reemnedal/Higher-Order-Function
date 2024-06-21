@@ -1,0 +1,76 @@
+
+<script>
+                
+                
+
+    let numbers=prompt("enter numbers") ;//output here String
+
+  //  let b= typeof(numbers);
+
+  //convert string to  array
+
+let array=numbers.split('');//this string array
+
+
+//convert array of string to ayyay of numbers 
+  let numbersArray = array.map(function(numStr) {
+return parseFloat(numStr); // Use parseFloat for decimal numbers, parseInt for integers
+});
+
+
+ 
+
+
+
+//     let  array=n.split(' ');
+      
+
+
+    
+//       //  let array=arr.split('').sort().join('');
+ 
+    function fizzbuzz (x){
+
+      
+
+
+      if(  x%3==0 && x%5==0 )
+   {
+  
+   return  'Fizz Buzz ' ;
+    
+   }else if  (x%3==0 ){
+
+  
+    return '  Fizz';
+
+   }else if ( x%5==0){
+
+    return 'Buzz';
+
+
+   }else{
+
+    return x;
+
+   }
+
+
+   
+ 
+
+
+    } 
+    
+    
+    numbersArray.forEach((num, index) => {
+    numbersArray[index] = fizzbuzz(num); // Modify the original array elements
+  });
+
+
+
+  document.write(numbersArray);
+  
+
+
+  </script>

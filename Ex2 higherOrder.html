@@ -1,0 +1,78 @@
+              <html lang="en">
+              <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+              </head>
+              <body>
+
+
+
+
+                <script>
+                
+                
+
+                  let numbers=prompt("enter numbers") ;//output here String
+
+                //  let b= typeof(numbers);
+
+                //convert string to  array
+
+            let array=numbers.split('');//this string array
+ 
+
+            //convert array of string to ayyay of numbers 
+                let numbersArray = array.map(function(numStr) {
+        return parseFloat(numStr); // Use parseFloat for decimal numbers, parseInt for integers
+    });
+
+
+
+
+ 
+
+
+            //     let  array=n.split(' ');
+                    
+         
+
+                  
+            //       //  let array=arr.split('').sort().join('');
+ 
+                  const newArr =numbersArray.map(myFunction);
+                  function myFunction(x){
+
+                    
+
+
+                    if( typeof(x)=='number' && !isNaN(x))
+                 {
+                
+                 return x%2==0?'even':'odd';
+                  
+                 } else{
+
+                
+                  return 'N/A';
+
+                 }
+
+                 
+
+                   
+
+                  } 
+                  
+                  document.write (newArr );
+       
+
+
+
+
+
+
+                </script>
+                
+              </body>
+              </html> 
